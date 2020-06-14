@@ -11,6 +11,7 @@ const PointWrapper = styled.div`
   border-radius: 5px;
   margin: 10px 0;
   padding: 0 10px;
+  cursor: pointer;
 
   display: flex;
   align-items: center;
@@ -34,11 +35,10 @@ const StyledIconMarker = styled(IconMarker)`
   }
 `;
 
-const PointCard = ({ color, name }) => {
-  const defaultColor = '#ca4a4a';
+const PointCard = ({ color, name, onClick }) => {
   return (
-  <PointWrapper>
-    <StyledIconMarker color={color ? color : defaultColor}/>
+  <PointWrapper onClick={onClick} >
+    <StyledIconMarker color={color}/>
     <span>{name}</span>
   </PointWrapper>
   );

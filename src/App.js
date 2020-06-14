@@ -1,28 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Map from "./componets/Map";
 import List from "./componets/List";
 
 function App() {
-  const [points, setPoints] = useState([]);
+  const localPoints = JSON.parse(localStorage.getItem('points'));
+  console.log(localPoints);
+  const [points, setPoints] = useState(!localPoints ? []: localPoints);
+
+  useEffect(() => {
+    localStorage.setItem('points', JSON.stringify(points))
+  }, [points])
+
+  const deletePoint = (id) => {
+    points.splice(id, 1);
+    setPoints([...points]);
+  }
 
   return (
     <div className="App">
       <Map
-        showPoints
         points={points}
-        setPoints={setPoints}
+        setPoints={useCallback(setPoints)}
       />
-      <List points={points} />
+      <List points={points} deletePoint={useCallback(deletePoint)}/>
     </div>
   );
 }
-
-
-
-// function placeNewMarker() {
-//   let marker = new Marker({
-//     pos,
-//   });
-// }
 
 export default App;
