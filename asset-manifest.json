@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/mapins/static/css/main.a17eb83a.chunk.css",
+    "main.js": "/mapins/static/js/main.a608c967.chunk.js",
+    "main.js.map": "/mapins/static/js/main.a608c967.chunk.js.map",
+    "runtime-main.js": "/mapins/static/js/runtime-main.5b4438f8.js",
+    "runtime-main.js.map": "/mapins/static/js/runtime-main.5b4438f8.js.map",
+    "static/js/2.eb12b0c0.chunk.js": "/mapins/static/js/2.eb12b0c0.chunk.js",
+    "static/js/2.eb12b0c0.chunk.js.map": "/mapins/static/js/2.eb12b0c0.chunk.js.map",
+    "index.html": "/mapins/index.html",
+    "precache-manifest.02ed829e6988b244fbaf80528bf04d32.js": "/mapins/precache-manifest.02ed829e6988b244fbaf80528bf04d32.js",
+    "service-worker.js": "/mapins/service-worker.js",
+    "static/css/main.a17eb83a.chunk.css.map": "/mapins/static/css/main.a17eb83a.chunk.css.map",
+    "static/js/2.eb12b0c0.chunk.js.LICENSE.txt": "/mapins/static/js/2.eb12b0c0.chunk.js.LICENSE.txt",
+    "static/media/arrowdown.85e49c20.svg": "/mapins/static/media/arrowdown.85e49c20.svg",
+    "static/media/close.84f72469.svg": "/mapins/static/media/close.84f72469.svg",
+    "static/media/marker.2bd1dbcf.svg": "/mapins/static/media/marker.2bd1dbcf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b4438f8.js",
+    "static/js/2.eb12b0c0.chunk.js",
+    "static/css/main.a17eb83a.chunk.css",
+    "static/js/main.a608c967.chunk.js"
+  ]
+}
